@@ -1,0 +1,42 @@
+
+
+
+.bx-filter-alt{
+    color: black;
+}
+
+.search__product__info{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.button__and__input{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 3rem;
+}
+
+.card__products{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-top: 6rem;
+}
+
+/*--------------- MEDIA QUERTY -----------------*/
+
+
+@media (min-width: 768px){
+
+}
