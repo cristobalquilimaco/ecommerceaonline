@@ -38,7 +38,7 @@ AddProductToCart(data)
         </div>
         <div className='info__add__to'>
             <span>Quantity</span>
-            <div>
+            <div className='btn_idproducts'>
             <button className='btn__info__card' onClick={handleminus}>-</button>
             <div className='btn__info__card'>{quantity}</div>
             <button className='btn__info__card' onClick={handlePlus}>+</button>

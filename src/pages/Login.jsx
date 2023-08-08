@@ -32,7 +32,7 @@ loginUser(data)
       <input className='label_two' type="email" id='email' />
       <label htmlFor="password">Password</label>
       <input type="password" id='password' />
-      <button className='btn login'>Login In</button>
+      <button className='btn_1 btn_register'>Login In</button>
       </div>
     </form>
   </div>

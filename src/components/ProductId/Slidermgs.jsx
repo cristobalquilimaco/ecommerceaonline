@@ -26,7 +26,9 @@ const handleNext = ()=>{
 }
 
   return (
-    <div className='slider'>
+    <>
+        <article className='seccion_slider'>
+          <div className='slider'>
       <button onClick={handlePrev} className='arrow__head arrow__left'>&lt;</button>
       <div style={objStyle} className='slider__second'>
         {product?.images.map((imgInfo) => (
@@ -38,6 +40,10 @@ const handleNext = ()=>{
       </div>
       <button onClick={handleNext}  className='arrow__head arrow__rigth'>&gt;</button>
     </div>
+    </article>
+    </>
+
+
   );
 };
 

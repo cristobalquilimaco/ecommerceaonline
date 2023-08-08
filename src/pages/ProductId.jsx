@@ -4,6 +4,7 @@ import useFetch from '../hooks/useFetch'
 import ProductIdInfo from '../components/ProductId/ProductIdInfo'
 import Slidermgs from '../components/ProductId/Slidermgs'
 import SimilarProduct from '../components/ProductId/SimilarProduct'
+import "../pages/styles/productId.css"
 
 const ProductId = () => {
 const { id } = useParams()
@@ -18,8 +19,11 @@ getProductById()
 
   return (
     <div>
-        <Slidermgs product={product}/>
+      <section className='product_slider'>
+      <Slidermgs product={product}/>
   <ProductIdInfo product={product} />
+      </section>
+
   <SimilarProduct product={product}/>
 
     </div>

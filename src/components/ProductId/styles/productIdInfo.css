@@ -1,1 +1,24 @@
+.product__info__card{
+    width: 400px;
+}
 
+.info__add__to{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .btn_idproducts{
+display: flex;
+gap: 1rem;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-top: 1rem;
+}
+
+.btn__info__card{
+    width: 40px;
+    height: 30px;
+} */
