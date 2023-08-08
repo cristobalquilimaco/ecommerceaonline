@@ -26,7 +26,7 @@ AddProductToCart(data)
 
             <article className='product' onClick={handleSelectProductId}>
         <header className='product__header'>
-            <img className='produc__img produc__img1' src={prod.images[0].url} alt="" />
+            <img className='produc__img produc__img1' src={prod?.images[0].url} alt="" />
             <img className='produc__img produc__img2' src={prod.images[1].url} alt="" />
         </header>
         <section className='product__section'>

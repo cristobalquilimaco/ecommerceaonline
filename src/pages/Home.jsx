@@ -17,64 +17,69 @@ const Home = () => {
   })
 
 
-const { productsGlobal } = useSelector ( state => state)
-const input = useRef()
+  const { productsGlobal } = useSelector(state => state)
+  const input = useRef()
 
 
-const handleChangeInput = () => {
+  const handleChangeInput = () => {
 
-  setInputValue(input.current.value.toLowerCase().trim())
+    setInputValue(input.current.value.toLowerCase().trim())
 
-}
-
-const productFilter = productsGlobal?.filter(prod => prod.title.toLowerCase().includes(inputValue))
-.filter(prod => {
-  const from = +fromTo.from
-  const to = +fromTo.to
-  const price = +prod.price
-  if(from && to ) {
-    return from <= price && price <= to
   }
-  if(from && !to){
-    return from <= price
-  }
-  if(!from && to){
-    return price <= to
-  }
-  if(!from && !to){
-    return true
-  }
-})
+
+  const productFilter = productsGlobal?.filter(prod => prod.title.toLowerCase().includes(inputValue))
+    .filter(prod => {
+      const from = +fromTo.from
+      const to = +fromTo.to
+      const price = +prod.price
+      if (from && to) {
+        return from <= price && price <= to
+      }
+      if (from && !to) {
+        return from <= price
+      }
+      if (!from && to) {
+        return price <= to
+      }
+      if (!from && !to) {
+        return true
+      }
+    })
 
   return (
     <div className='search__product__info'>
-      
+
       <div className='search__products'>
-      <i className='bx bx-filter-alt' onClick={() => setShowFilters(!showFilters)}></i>
+        <i className='bx bx-filter-alt' onClick={() => setShowFilters(!showFilters)}></i>
       </div>
-   <div className='card__products_and_filters'>
-   <div className='filters' style={{display: showFilters ? 'block' : 'none'}}>
-        <FilterCategory />
-        <FilterByPrice setFromTo={setFromTo}/>
-      </div>
+      <div className='card__products_and_filters'>
+
         <div className='button__and__input'>
-        <input className='input__search' ref={input} onChange={handleChangeInput} type="text" placeholder='search products' />
-        <i onClick={handleChangeInput} className='bx bx-search-alt'></i>
+          <input className='input__search' ref={input} onChange={handleChangeInput} type="text" placeholder='search products' />
+          <i onClick={handleChangeInput} className='bx bx-search-alt'></i>
         </div>
-       
 
 
-      <div className='card__products'>
-        {
-          productFilter?.map(prod => (
-            <CardProduct
-              key={prod.id}
-              prod={prod}
-            />
-          ))
-        }
+
+        <div className='card__products'>
+        <div className='filters' style={{ display: showFilters ? 'block' : 'none' }}>
+          <FilterCategory />
+          <FilterByPrice setFromTo={setFromTo} />
+
+        </div>
+          {
+            productFilter?.map(prod => (
+              <div className='prod_filter'>
+                <CardProduct
+                key={prod.id}
+                prod={prod}
+              />
+              </div>
+              
+            ))
+          }
+        </div>
       </div>
-   </div>
 
     </div>
   )
