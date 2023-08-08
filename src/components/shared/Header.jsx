@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Home/styles/header.css';
 import FilterByPrice from '../Home/FilterByPrice';
 import FilterCategory from '../Home/FilterCategory';
+import imgstore from "/public/quilistore.png"
 
 const Header = () => {
   const [showFilter, setShowFilter] = useState(true);
@@ -19,7 +20,7 @@ const Header = () => {
   return (
     <header className='header__nav'>
       <h1>
-        <Link to='/'>E-commerce</Link>
+        <Link to='/'><img className='logo_store' src={imgstore} alt="" /></Link>
       </h1>
       <nav className='nav__menu'>
       <i className='bx bx-filter-alt icon__filter' onClick={handleClickToggleFilter}></i>

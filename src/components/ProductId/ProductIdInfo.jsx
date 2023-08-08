@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import '../Home/styles/productidinfo.css'
 import useCrudCart from '../../hooks/useCrudCart';
-
-// productsIdInfo.css
+import  "../ProductId/styles/productIdInfo.css"
 
 
 const ProductIdInfo = ({product}) => {
