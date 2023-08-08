@@ -2,8 +2,9 @@
 width: 100%;
 max-width: 500px;
 overflow: hidden;
-
+margin-top: 5rem;
 }
+
 .slider__second{
 display: flex;
 width: 300%;
@@ -30,7 +31,7 @@ position: absolute;
 background-color: salmon;
 color: white;
 font-size: 1.5rem;
-top: 10%;
+top:22%;
 transform: translate(-0, 100%);
 border-radius: 50%;
 z-index: 3;
@@ -46,7 +47,29 @@ right: 30px;
 }
 
 .arrow__left{
-    left: 30px;
-    }
-    
+left: 30px;
+}
+
+@media (min-width: 768px) {
+
+    .arrow__head{
+        top:22%;
+
+        }
+        
+        .arrow__head:hover{
+        filter: brightness(1.2);
+            
+            }
+        
+        .arrow__rigth{
+        right: 1080px;
+        }
+        
+        .arrow__left{
+        left: 365px;
+        }
+
+
+}
 

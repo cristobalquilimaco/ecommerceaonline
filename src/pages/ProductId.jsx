@@ -18,15 +18,16 @@ getProductById()
 }, [id])
 
   return (
-    <div>
+    <>
+        <div className='productid1'>
       <section className='product_slider'>
       <Slidermgs product={product}/>
   <ProductIdInfo product={product} />
-      </section>
-
+  </section>
   <SimilarProduct product={product}/>
-
     </div>
+    </>
+
   )
 }
 
