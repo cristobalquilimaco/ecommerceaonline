@@ -57,7 +57,7 @@ const Header = () => {
           <ul className='list__icon__menu'>
                         <li>
               <Link to='/'>
-              <i class='bx bx-home-smile' ></i>
+              <i className='bx bx-home-smile' ></i>
               </Link>
             </li>
             <li>
