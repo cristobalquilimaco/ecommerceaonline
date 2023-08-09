@@ -47,6 +47,58 @@ font-size: 16px;
 font-weight: bold;
 }
 
+@keyframes modalAppear {
+    0% {
+      transform: translateX(-50%) scale(0);
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+    }
+  }
+  
+  .modalrr {
+    background-color: rgba(250, 128, 114, 0.925);
+    width: 350px;
+    height: 340px;
+    position: fixed;
+    bottom:30%;
+    left: 50%;
+    transform: translateX(-50%) scale(0); /* Escala inicial de 0 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.67);
+    animation: modalAppear 0.5s ease forwards; /* Aplicar la animación de entrada */
+    visibility: hidden;
+  }
+  
+  .modalrr.visible {
+    visibility: visible;
+  }
+
+.modal_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+}
+
+.bmo{
+width: 200px;
+}
+
+.close-button{
+background-color: white;
+color: black;
+width: 100px;
+height: 25px;
+border-radius: 10px;
+}
+
 
 @keyframes moveToCenter {
     0% {

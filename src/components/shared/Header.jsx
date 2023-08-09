@@ -20,11 +20,11 @@ const Header = () => {
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (
-        showMenu &&
-        !event.target.classList.contains('list__icon__menu') &&
-        !event.target.classList.contains('bx-menu')
+        (showMenu && !event.target.classList.contains('list__icon__menu') && !event.target.classList.contains('bx-menu')) ||
+        (showFilter && !event.target.classList.contains('icon__filter') && !event.target.classList.contains('filter__menu'))
       ) {
         setShowMenu(false);
+        setShowFilter(false);
       }
     };
 
@@ -33,7 +33,11 @@ const Header = () => {
     return () => {
       window.removeEventListener('click', handleOutsideClick);
     };
-  }, [showMenu]);
+
+
+  }, [showMenu, showFilter]);
+
+  
   return (
     <header className='header__nav'>
       <h1>

@@ -43,11 +43,11 @@ filter: brightness(1.2);
     }
 
 .arrow__rigth{
-right: 30px;
+right: 15px;
 }
 
 .arrow__left{
-left: 30px;
+left: 15px;
 }
 
 @media (min-width: 768px) {

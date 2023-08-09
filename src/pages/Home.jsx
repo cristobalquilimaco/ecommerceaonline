@@ -57,9 +57,6 @@ const Home = () => {
           <input className='input__search' ref={input} onChange={handleChangeInput} type="text" placeholder='search products' />
           <i onClick={handleChangeInput} className='bx bx-search-alt'></i>
         </div>
-
-
-
         <div className='card__products'>
         <div className='filters' style={{ display: showFilters ? 'block' : 'none' }}>
           <FilterCategory />
@@ -68,12 +65,13 @@ const Home = () => {
         </div>
           {
             productFilter?.map(prod => (
-              <div className='prod_filter'>
-                <CardProduct
+              <div key={prod.id} className='prod_filter'>
+              <CardProduct
                 key={prod.id}
                 prod={prod}
               />
-              </div>
+            </div>
+              
               
             ))
           }

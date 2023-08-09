@@ -5,13 +5,19 @@
 
 }
 
-.footer__info__card{
-display: flex;
-margin-top: 40px;
-gap: 1rem;
-align-items: center;
-justify-content: center;
-}
+.footer__info__card {
+    display: flex;
+    margin-top: 40px;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px rgba(128, 128, 128, 0.692);
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
 
 .footer__info__card :nth-child(2){
 font-weight: bold;
@@ -27,6 +33,7 @@ font-size: 20px;
     justify-content: center;
     text-align: center;
     font-size: 15px;
+
 }
 
 .info__price__card{
@@ -36,11 +43,12 @@ font-size: 20px;
  
 .btn_idproducts{
 display: flex;
-gap: 1rem;
+gap: 0.5rem;
 align-items: center;
 justify-content: center;
 text-align: center;
 margin-top: 1rem;
+
 }
 
 .btn__info__card{
