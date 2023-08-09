@@ -32,6 +32,8 @@ width: 400px;
 height: 30px;
 }
 
+
+
 .card__products{
 display: flex;
 flex-wrap: wrap;
@@ -39,6 +41,7 @@ align-items: center;
 justify-content: center;
 margin-top: 10rem;
 
+width: 100%;
 }
 
 
