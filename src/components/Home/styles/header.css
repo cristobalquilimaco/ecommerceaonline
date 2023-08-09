@@ -21,6 +21,7 @@ margin-top: 1rem;
 }
 .nav__menu{
     margin-right: 2rem;
+
 }
 
 
@@ -32,14 +33,14 @@ margin-top: 1rem;
 .list__icon__menu{
 display: flex;
 flex-direction: column;
-position: fixed;
+position: absolute;
 gap: 1rem;
-width: 12%;
+width: 14%;
 height: 45vh;
 align-items: center;
 justify-content: center;
-top: 29.9%;
-left: 94%;
+top: 415%;
+left: 95%;
 transform: translate(-50%, -50%);
 z-index: 8;
 border-radius: 0 0 0 1rem;
@@ -47,6 +48,7 @@ background-color: rgb(255, 255, 255);
 -webkit-box-shadow: -6px 4px 6px -5px rgba(0,0,0,0.75);
 -moz-box-shadow: -6px 4px 6px -5px rgba(0,0,0,0.75);
 box-shadow: -6px 4px 6px -5px rgba(0,0,0,0.75);
+
 }
 
 .icon__filter{
@@ -54,17 +56,18 @@ margin-right: 1rem;
 }
 
 .filter__menu{
-    position: fixed;
-    top: 57%;
-    left: 75%;
+    position: absolute;
+    top: 801%;
+    left: 68.9%;
     transform: translate(-50%, -50%);
     z-index: 8;
-    width: 50%;
+    width: 60%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: -6px 4px 6px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: -6px 4px 6px -5px rgba(0,0,0,0.75);
     box-shadow: -6px 4px 6px -5px rgba(0,0,0,0.75);
+overflow-y: hidden;
 }
 
 /* ---------------MEDIA QUERTY--------- */

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../Home/styles/header.css';
 import FilterByPrice from '../Home/FilterByPrice';
@@ -6,7 +6,7 @@ import FilterCategory from '../Home/FilterCategory';
 import imgstore from "/public/quilistore.png"
 
 const Header = () => {
-  const [showFilter, setShowFilter] = useState(true);
+  const [showFilter, setShowFilter] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
   const handleClickToggleFilter = () => {
@@ -17,6 +17,23 @@ const Header = () => {
     setShowMenu(!showMenu);
   };
 
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        showMenu &&
+        !event.target.classList.contains('list__icon__menu') &&
+        !event.target.classList.contains('bx-menu')
+      ) {
+        setShowMenu(false);
+      }
+    };
+
+    window.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, [showMenu]);
   return (
     <header className='header__nav'>
       <h1>

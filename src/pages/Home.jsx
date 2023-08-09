@@ -50,7 +50,6 @@ const Home = () => {
     <div className='search__product__info'>
 
       <div className='search__products'>
-        <i className='bx bx-filter-alt' onClick={() => setShowFilters(!showFilters)}></i>
       </div>
       <div className='card__products_and_filters'>
 

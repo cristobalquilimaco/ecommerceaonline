@@ -1,4 +1,6 @@
-
+.filters{
+display: none;
+}
 
 
 .bx-filter-alt{
@@ -6,12 +8,13 @@
 }
 
 .search__product__info{
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+
 }
 
 .button__and__input{
@@ -42,7 +45,6 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 margin-top: 10rem;
-
 width: 100%;
 }
 
@@ -50,10 +52,7 @@ width: 100%;
 
 
 
+
+
 /*--------------- MEDIA QUERTY -----------------*/
 
-
-@media (min-width: 768px){
-
-
-}
