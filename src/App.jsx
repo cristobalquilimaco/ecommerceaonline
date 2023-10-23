@@ -11,6 +11,7 @@ import Register from './pages/Register'
 import Purchases from './pages/Purchases'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
+import Footer from './components/shared/Footer'
 
 
 
@@ -39,8 +40,8 @@ dispatch(getAllProductsThunk())
     <Route path='/purchases' element={<Purchases />}/>
     <Route path='/cart' element={<Cart />}/>
     <Route/>
-    
   </Routes>
+  <Footer/>
 </div>
   )
 }
