@@ -2,10 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 81vh;
 }
 
 .input_class{
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    height: 90px;
     width: 100%;
     background-color: rgb(255, 240, 238);
-    margin-top: 1rem;
-    
+    height: 90px;
+    margin: 0;
 }
 
 .list_footer{

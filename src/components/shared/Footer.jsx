@@ -4,7 +4,6 @@ import './styles/Footer.css';
 const Footer = () => {
   return (
     <div className='footer_container'>
-      <div className='wave'></div>
       <ul className='list_footer'>
         <li><a href="https://github.com/cristobalquilimaco"><i className='bx bxl-github'></i></a></li>
         <li><a href="https://www.linkedin.com/in/cristobal-quilimaco-119b4324b/"><i className='bx bxl-linkedin-square'></i></a></li>
