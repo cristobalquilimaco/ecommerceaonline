@@ -111,3 +111,9 @@ border-radius: 10px;
         transform: translateX(0);
     }
 }
+
+@media screen and (min-width: 750px) {
+  .form_name{
+    height: 90vh;
+    }
+}

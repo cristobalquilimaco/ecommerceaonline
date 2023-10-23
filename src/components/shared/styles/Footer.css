@@ -7,7 +7,7 @@
     width: 100%;
     background-color: rgb(255, 240, 238);
     height: 90px;
-    margin: 0;
+    bottom: 0;
 }
 
 .list_footer{
