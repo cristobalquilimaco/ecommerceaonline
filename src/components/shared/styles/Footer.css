@@ -5,10 +5,16 @@
     gap: 0.5rem;
     height: 90px;
     width: 100%;
+    background-color: rgb(255, 240, 238);
+    margin-top: 1rem;
     
 }
 
 .list_footer{
     display: flex;
-    f
+    gap: 2rem;
+}
+
+.email_footer{
+    color: rgb(230, 40, 19);
 }
