@@ -2,11 +2,3 @@ body{
     background-color: rgb(243, 242, 242);
     flex: 1;
 }
-
-.app{
-    flex: 1;
-}
-
-.bx{
-color: salmon;
-}
