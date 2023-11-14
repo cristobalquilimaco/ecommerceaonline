@@ -7,8 +7,7 @@
     justify-content: center;
     width: 100%;
     max-width: 350px;
-margin-top: 1rem;
-
+    margin-top: 1rem;
 }
 
 
@@ -26,13 +25,15 @@ font-size: 1rem;
 width: 3em;
 aspect-ratio: 1;
 border-radius: 50%;
-background-color: salmon;
+background-color: rgb(156, 147, 146);
 color: white;
 transition: transform 200ms ease;
 }
 
 .bx-trash{
-color: white;
+    font-size: 20px;
+    display: block;
+    color: white;
 }
 
 

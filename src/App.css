@@ -1,3 +1,12 @@
 body{
-    background-color: rgba(128, 128, 128, 0.027);
+    background-color: rgb(243, 242, 242);
+    flex: 1;
+}
+
+.app{
+    flex: 1;
+}
+
+.bx{
+color: salmon;
 }

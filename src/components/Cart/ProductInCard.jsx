@@ -1,4 +1,3 @@
-import React from 'react'
 import useCrudCart from '../../hooks/useCrudCart'
 import '../Cart/styles/productINcard.css'
 

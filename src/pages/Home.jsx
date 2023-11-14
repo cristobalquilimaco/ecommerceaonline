@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import CardProduct from '../components/Home/CardProduct';
 import './home.css';
 import FilterByPrice from '../components/Home/FilterByPrice';
 import FilterCategory from '../components/Home/FilterCategory';
+import Banner from '../components/banners/Banner';
 
 
 const Home = () => {
@@ -47,8 +48,10 @@ const Home = () => {
     })
 
   return (
+    <>
+        
     <div className='search__product__info'>
-
+    <Banner/>
       <div className='search__products'>
       </div>
       <div className='card__products_and_filters'>
@@ -61,7 +64,6 @@ const Home = () => {
         <div className='filters' style={{ display: showFilters ? 'block' : 'none' }}>
           <FilterCategory />
           <FilterByPrice setFromTo={setFromTo} />
-
         </div>
           {
             productFilter?.map(prod => (
@@ -77,8 +79,9 @@ const Home = () => {
           }
         </div>
       </div>
-
     </div>
+    </>
+
   )
 }
 

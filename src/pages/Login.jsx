@@ -49,6 +49,8 @@ if(modalVisible){
         <form className='form_user' onSubmit={handleLogin}>
       <div className='input_class'>
       <i className='bx bxs-user'></i>
+      <p>lo@gmail.com</p>
+      <p>1234</p>
       <h2 className='tittle'>Login</h2>
       <label className='label_one' htmlFor="email">Email</label>
       <input className='label_two' type="email" id='email' />

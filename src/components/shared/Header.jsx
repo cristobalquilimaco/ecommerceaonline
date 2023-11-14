@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from'react';
 import { Link } from 'react-router-dom';
 import '../Home/styles/header.css';
 import FilterByPrice from '../Home/FilterByPrice';
@@ -13,9 +13,6 @@ const Header = () => {
     setShowFilter(!showFilter);
   };
 
-  const handleClickToggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -39,45 +36,48 @@ const Header = () => {
 
   
   return (
-    <header className='header__nav'>
-      <h1>
-        <Link to='/'><img className='logo_store' src={imgstore} alt="" /></Link>
-      </h1>
-      <nav className='nav__menu'>
-      <i className='bx bx-filter-alt icon__filter' onClick={handleClickToggleFilter}></i>
-
+    <header className='header__nav bg-light mb-4 bg-white'>
+      <nav className="navbar navbar-expand-lg bg-white">
+  <div className="container-fluid">
+  <Link to='/'><img className='logo_store' src={imgstore} alt="" /></Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ">
+        <li className="nav-item">
+          <Link to={"/"} className="nav-link active" aria-current="page">Home</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={"/login"} className="nav-link" href="#">Login</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={"/register"} className="nav-link" href="#">Register</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={"/purchases"} className="nav-link" href="#">Purchases</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={"/cart"} className="nav-link" href="#">Cart</Link>
+        </li>
+        <li onClick={handleClickToggleFilter} className="nav-item nav__filter">
+        <i className='bx bx-filter-alt icon__filter' ></i>
+        </li>
 {showFilter && (
   <div className='filter__menu'>
     <FilterCategory />
     <FilterByPrice />
   </div>
-)}
-        <i className='bx bx-menu' onClick={handleClickToggleMenu}></i>
-        {showMenu && (
-          <ul className='list__icon__menu'>
-                        <li>
-              <Link to='/'>
-              <i className='bx bx-home-smile' ></i>
-              </Link>
-            </li>
-            <li>
-              <Link to='/login'>
-                <i className='bx bxs-user-circle'></i>
-              </Link>
-            </li>
-            <li>
-              <Link to='/Register'><i className='bx bx-edit'></i></Link>
-            </li>
-            <li>
-              <Link to='/purchases'><i className='bx bx-shopping-bag'></i></Link>
-            </li>
-            <li>
-              <Link to='/cart'><i className='bx bx-cart'></i></Link>
-            </li>
+  )}
+      </ul>
+    </div>
+  </div>
+  <div>
 
-          </ul>
-        )}
-      </nav>
+</div>
+</nav>
+
+
     </header>
   );
 };

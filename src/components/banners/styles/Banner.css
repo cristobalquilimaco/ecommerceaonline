@@ -1,0 +1,127 @@
+/* Estilos CSS */
+.custom-banner {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 12em;
+  background-color: rgba(128, 128, 128, 0.034);
+  padding: 1rem;
+
+}
+
+.custom__banner2{
+width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ margin: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 4rem;
+ 
+}
+
+.custom-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.custom-slider-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner__img{
+  width: 800px;
+  background-color: #e94f4f;
+}
+
+.custom-slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.custom-prev-button,
+.custom-next-button {
+  background-color: #e94f4f;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 8px;
+  cursor: pointer;
+
+}
+
+.custom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+
+  top: 59%;
+  left: 32%;
+}
+
+.icon_info_banner{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem ;
+  border: 1px solid salmon;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 400px;
+  width: 450px;
+  background-color: rgba(250, 128, 114, 0.062);
+}
+
+.icon_individual{
+  width: 50px;
+}
+
+.icon__and_info{
+  display: flex;
+  gap: 1rem;
+  width: 400px;
+  
+}
+
+@media (width <= 600px) {
+  .banner__img{
+    width: 380px;
+  }
+
+  .icon_info_banner{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid salmon;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 350px;
+    width: 355px;
+    background-color: rgba(250, 128, 114, 0.062);
+  }
+
+  .icon__and_info{
+    width: 350px;
+    
+  }
+
+  .custom__banner2{
+    gap: 1rem;
+    
+  }
+
+  .custom-btn {
+    top: 32%;
+    left: 32%;
+  }
+
+  .custom-banner {
+    margin-top: 8em;
+  }
+
+}

@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import '../Home/styles/filterByPrices.css'
 
-const FilterByPrice = ({setFromTo}) => {
+const FilterByPrice = ({ setFromTo }) => {
 
   const {reset, register, handleSubmit} = useForm()
   const [showFilter, setShowFilter] = useState(true);
