@@ -79,7 +79,10 @@ color: var(--subtitle);
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    
+}
+
+.product__title{
+    font-size: 20px;
 }
 
 .product__price-label{
@@ -87,6 +90,7 @@ color: var(--subtitle);
 }
 .product__price-value{
 font-weight: 600;
+font-size: 22px;
 }
 
 .product__btn{
