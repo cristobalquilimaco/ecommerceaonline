@@ -9,11 +9,15 @@
     bottom: 0;
 }
 
-.list_footer{
+.list_footer {
     display: flex;
     gap: 2rem;
 }
 
-.email_footer{
+.email_footer {
     color: rgb(230, 40, 19);
+}
+
+.bxl-github, .bxl-linkedin-square, .bxs-briefcase {
+    color: salmon;
 }
