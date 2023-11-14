@@ -13,7 +13,7 @@ import Login from './pages/Login';
 import Cart from './pages/Cart';
 import Footer from './components/shared/Footer';
 import LoadingPage from './components/LoadingPage';
-import "./app.css"
+
 
 function App() {
   const [loadingComplete, setLoadingComplete] = useState(false);
