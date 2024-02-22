@@ -47,7 +47,7 @@ const Banner = () => {
           </li>
           <li className="icon__and_info">
             <img className="icon_individual" src={icon4} alt="" />
-            <p>Compra en línea y recoge en tienda.</p>
+            <p>Buy online and pick up in store.</p>
           </li>
         </ul>
         <section className="custom-btn">
