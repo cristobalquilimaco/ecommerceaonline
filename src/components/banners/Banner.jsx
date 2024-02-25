@@ -20,6 +20,10 @@ const Banner = () => {
     setCurrentIndex(prevBanner);
   };
 
+  setTimeout(() => {
+    goToNextIndex()
+  }, 5000);
+
   return (
     <div className="custom-banner">
       <article className="custom__banner2">
