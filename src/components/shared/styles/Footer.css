@@ -6,7 +6,9 @@
     gap: 0.5rem;
     background-color: rgb(255, 240, 238);
     height: 90px;
+    width: 100%;
     bottom: 0;
+    position: fixed;
 }
 
 .list_footer {
