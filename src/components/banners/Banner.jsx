@@ -22,7 +22,7 @@ const Banner = () => {
 
   setTimeout(() => {
     goToNextIndex()
-  }, 5000);
+  }, 10000);
 
   return (
     <div className="custom-banner">
