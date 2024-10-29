@@ -5,7 +5,7 @@ import FilterByPrice from '../Home/FilterByPrice';
 import FilterCategory from '../Home/FilterCategory';
 import imgstore from "/public/quilistore.png";
 
-const Header = () => {
+const Header = ({ inputValue, onChangeInput }) => {
     const [showFilter, setShowFilter] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
 
@@ -68,8 +68,15 @@ const Header = () => {
                                 <FilterByPrice />
                             </div>
                         )}
-                        <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <form className="d-flex" role="search" onSubmit={(e) => { e.preventDefault(); }}>
+                            <input
+                                className="form-control me-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                                value={inputValue}
+                                onChange={(e) => onChangeInput(e.target.value)}
+                            />
                             <button className="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>

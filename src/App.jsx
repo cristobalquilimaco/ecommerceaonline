@@ -14,8 +14,13 @@ import Cart from './pages/Cart';
 import Footer from './components/shared/Footer';
 import LoadingPage from './components/LoadingPage';
 
-
 function App() {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleChangeInput = (value) => {
+    setInputValue(value);
+  };
+
   const [loadingComplete, setLoadingComplete] = useState(false);
 
   const dispatch = useDispatch();
@@ -26,15 +31,16 @@ function App() {
       .catch(() => setLoadingComplete(true));
   }, [dispatch]);
 
-  // Mostrar el componente de carga hasta que la carga haya finalizado
+  // Show the loading component until loading is complete
   if (!loadingComplete) {
     return <LoadingPage />;
   }
+
   return (
     <div className='app'>
-      <Header />
+      <Header inputValue={inputValue} onChangeInput={handleChangeInput} />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home inputValue={inputValue} />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
         <Route path='/product/:id' element={<ProductId />} />
