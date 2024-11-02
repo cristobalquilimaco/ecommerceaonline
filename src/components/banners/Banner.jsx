@@ -54,11 +54,11 @@ const Banner = () => {
             <p>Buy online and pick up in store.</p>
           </li>
         </ul>
-        <section className="custom-btn">
-          <button className="custom-prev-button" onClick={goToPrevIndex}>
+        <section className="principal__custom-btn">
+          <button className="custom__btn custom-prev-button" onClick={goToPrevIndex}>
             Prev
           </button>
-          <button className="custom-next-button" onClick={goToNextIndex}>
+          <button className="custom__btn custom-next-button" onClick={goToNextIndex}>
             Next
           </button>
         </section>

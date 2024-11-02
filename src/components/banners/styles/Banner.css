@@ -49,20 +49,19 @@ width: 100%;
 .custom-next-button {
   background-color: #e94f4f;
   border: none;
-  padding: 8px 16px;
+  padding: 4px 16px;
   margin: 0 8px;
   cursor: pointer;
 
 }
 
-.custom-btn {
+.principal__custom-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   position: absolute;
-
-  top: 59%;
+  top: 62%;
   left: 32%;
 }
 
@@ -117,8 +116,8 @@ width: 100%;
     
   }
 
-  .custom-btn {
-    top: 38%;
+  .principal__custom-btn {
+    top: 39%;
     left: 26%;
   }
 
