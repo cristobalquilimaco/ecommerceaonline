@@ -32,7 +32,7 @@ const FilterCategory = () => {
   return (
     <div className='filter__category'>
       <button className='button__filter' onClick={handleClickToggleFilter}>
-        {showFilter ? 'Hide categories' : 'Show categories'}
+        {showFilter ? 'Hide categories' : 'Filter Categories'}
       </button>
       {showFilter && (
         <div className='filter__prod'>

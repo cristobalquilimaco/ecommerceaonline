@@ -17,9 +17,8 @@ const FilterByPrice = ({ setFromTo }) => {
 
   return (
     <div className='filter__prices'>
-      <h3>Price</h3>
       <button className='btn__filter__price' onClick={() => setShowFilter(!showFilter)}>
-        {showFilter ? 'Hide filter' : 'Show filter '}
+        {showFilter ? 'Hide Price' : 'Filter Price '}
       </button>
       {showFilter && (
         <form className='search__by__price' onSubmit={handleSubmit(submit)}>
