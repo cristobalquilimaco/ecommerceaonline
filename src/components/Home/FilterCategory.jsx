@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getAllProductsThunk } from '../../store/slices/products.slices';
 import useFetch from '../../hooks/useFetch';
@@ -31,8 +31,6 @@ const FilterCategory = () => {
 
   return (
     <div className='filter__category'>
-      <h3>Filter Category</h3>
-
       <button className='button__filter' onClick={handleClickToggleFilter}>
         {showFilter ? 'Hide categories' : 'Show categories'}
       </button>

@@ -62,12 +62,7 @@ const Header = ({ inputValue, onChangeInput }) => {
                                 <i className='bx bx-filter-alt icon__filter'></i>
                             </li>
                         </ul>
-                        {showFilter && (
-                            <div className='filter__menu'>
-                                <FilterCategory />
-                                <FilterByPrice />
-                            </div>
-                        )}
+
                         <form className="d-flex" role="search" onSubmit={(e) => { e.preventDefault(); }}>
                             <input
                                 className="form-control me-2"

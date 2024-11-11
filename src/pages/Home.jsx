@@ -37,11 +37,11 @@ const Home = ({ inputValue }) => {
     <>
       <div className='search__product__info'>
         <Banner />
-        <div className='card__products'>
-          <div className='filters' style={{ display: showFilters ? 'block' : 'none' }}>
+        <div className='filter__btn'>
             <FilterCategory />
             <FilterByPrice setFromTo={setFromTo} />
           </div>
+        <div className='card__products'>
           {
             productFilter?.map(prod => (
               <div key={prod.id} className='prod_filter'>
