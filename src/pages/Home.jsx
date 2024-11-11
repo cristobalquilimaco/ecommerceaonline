@@ -37,7 +37,7 @@ const Home = ({ inputValue }) => {
     <>
       <div className='search__product__info'>
         <Banner />
-        <div className='filter__btn'>
+        <div className='filter__btn_home'>
             <FilterCategory />
             <FilterByPrice setFromTo={setFromTo} />
           </div>

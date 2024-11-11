@@ -15,6 +15,14 @@
     overflow: hidden;
 }
 
+.filter__btn_home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    position: relative;
+}
+
 .button__and__input {
     display: flex;
     flex-direction: row;
