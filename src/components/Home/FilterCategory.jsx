@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { getAllProductsThunk } from '../../store/slices/products.slices';
 import useFetch from '../../hooks/useFetch';
 import '../Home/styles/filterCategory.css'
+import useOutsideClick from '../../hooks/useOutsideClick';
 
 const FilterCategory = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,10 @@ const FilterCategory = () => {
     const url = `https://e-commerce-api-v2.academlo.tech/api/v1/products?categoryId=${id}`;
     dispatch(getAllProductsThunk(url));
   };
+
+  // Usamos el hook personalizado
+  const filterRef = useOutsideClick(() => setShowFilter(false));  // Llamamos al hook y pasamos el callback
+
 
   const handleClickToggleFilter = () => {
     setShowFilter(!showFilter);

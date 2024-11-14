@@ -1,8 +1,8 @@
 .filter__prices{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .btn__filter__price {
@@ -13,6 +13,7 @@
   transition: background-color 0.3s ease-out;
   padding: 0.6rem;
 }
+
 
 .btn__filter__price:hover,
 .btn__filter__price:active {
@@ -26,16 +27,17 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  left: 1px;
+  left: -21px;
   padding: 1.09em;
   background-color: rgba(235, 235, 235, 0.925);
   position: absolute;
+  top: 45px;
+  gap: 0.5em;
 }
 
 .label__price{
-display: flex;
-
-gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .label__to{
@@ -45,25 +47,21 @@ gap: 1rem;
 
 .label__of_to{
 margin-left: 20px;
-
 }
 
+.filter__price{
+  background-color: salmon;
+  color: white;
+  padding: 10px;
+  transition: background-color 0.3s ease-out;
+  border-radius: 5px;
+}
 
+.filter__price:hover {
+  background-color: rgb(238, 211, 207);
+  color: black;
+}
 
-
-  .filter__price{
-    background-color: salmon;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-out;
-  }
-
-  .filter__price:hover {
-    background-color: rgb(238, 211, 207);
-    color: black;
-  }
-
-  button{
-    cursor: pointer;
-  }
+button{
+  cursor: pointer;
+}
