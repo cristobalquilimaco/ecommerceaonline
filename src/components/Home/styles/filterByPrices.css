@@ -3,7 +3,21 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    
+}
+
+.btn__filter__price {
+  background-color: salmon;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-out;
+  padding: 0.6rem;
+}
+
+.btn__filter__price:hover,
+.btn__filter__price:active {
+  background-color: rgb(238, 211, 207);
+  color: black;
 }
 
 .search__by__price{
@@ -34,24 +48,7 @@ margin-left: 20px;
 
 }
 
-.btn__filter__price{
-    padding: 0.6rem;
-}
 
-.btn__filter__price {
-    background-color: salmon;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-out;
-    
-  }
-  
-  .btn__filter__price:hover,
-  .btn__filter__price:active {
-    background-color: rgb(238, 211, 207);
-    color: black;
-  }
 
 
   .filter__price{

@@ -5,7 +5,20 @@ align-items: center;
 margin-top: 1rem;
 }
 
+.button__filter{
+    padding: 0.3rem;
+    background-color: salmon;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-out;
+}
 
+.button__filter:hover{
+    background-color: rgb(238, 211, 207);
+    color: black;
+
+}
 
 .filter__of__category{
 display: flex;
@@ -19,8 +32,6 @@ background-color: rgba(235, 235, 235, 0.925);
 position: absolute;
 }
 
-
-
 .categories__filter{
     cursor: pointer;
 }
@@ -30,21 +41,9 @@ position: absolute;
 background-color: salmon;
 }
 
-.button__filter{
-    padding: 0.3rem;
-    background-color: salmon;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-out;
 
-}
 
-.button__filter:hover{
-    background-color: rgb(238, 211, 207);
-    color: black;
 
-}
 
 
 
