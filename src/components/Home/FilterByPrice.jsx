@@ -5,7 +5,7 @@ import '../Home/styles/filterByPrices.css'
 const FilterByPrice = ({ setFromTo }) => {
 
   const {reset, register, handleSubmit} = useForm()
-  const [showFilter, setShowFilter] = useState(true);
+  const [showFilter, setShowFilter] = useState(false);
 
   const submit = data => {
     setFromTo(data)

@@ -7,7 +7,7 @@ import '../Home/styles/filterCategory.css'
 const FilterCategory = () => {
   const dispatch = useDispatch();
 
-  const [showFilter, setShowFilter] = useState(true);
+  const [showFilter, setShowFilter] = useState(false);
 
   const url = `https://e-commerce-api-v2.academlo.tech/api/v1/categories`;
   const [categories, getAllCategories] = useFetch(url);
