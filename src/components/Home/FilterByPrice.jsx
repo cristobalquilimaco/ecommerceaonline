@@ -1,23 +1,26 @@
 import  { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import '../Home/styles/filterByPrices.css'
+import useOutsideClick from '../../hooks/useOutsideClick'
 
 const FilterByPrice = ({ setFromTo }) => {
 
-  const {reset, register, handleSubmit} = useForm()
-  const [showFilter, setShowFilter] = useState(false);
+const {reset, register, handleSubmit} = useForm()
+const [showFilter, setShowFilter] = useState(false);
 
-  const submit = data => {
-    setFromTo(data)
-    reset({
-      from: '',
-      to: ''
-    })
-  }
+const filterRef = useOutsideClick(()=> setShowFilter(false))
+
+const submit = data => {
+  setFromTo(data)
+  reset({
+    from: '',
+    to: ''
+  })
+}
 
   return (
-    <div className='filter__prices'>
-      <button className='btn__filter__price' onClick={() => setShowFilter(!showFilter)}>
+    <div className='filter__prices' ref={filterRef}>
+      <button className='btn__filter__price' onClick={() => setShowFilter(!showFilter)} >
         {showFilter ? 'Hide Price' : 'Filter Price '}
       </button>
       {showFilter && (
