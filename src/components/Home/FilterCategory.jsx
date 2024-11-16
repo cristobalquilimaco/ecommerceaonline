@@ -2,12 +2,11 @@ import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getAllProductsThunk } from '../../store/slices/products.slices';
 import useFetch from '../../hooks/useFetch';
-import '../Home/styles/filterCategory.css'
+import '../Home/styles/filterCategory.css';
 import useOutsideClick from '../../hooks/useOutsideClick';
 
 const FilterCategory = () => {
   const dispatch = useDispatch();
-
   const [showFilter, setShowFilter] = useState(false);
 
   const url = `https://e-commerce-api-v2.academlo.tech/api/v1/categories`;
@@ -22,9 +21,8 @@ const FilterCategory = () => {
     dispatch(getAllProductsThunk(url));
   };
 
-  // Usamos el hook personalizado
-  const filterRef = useOutsideClick(() => setShowFilter(false));  // Llamamos al hook y pasamos el callback
-
+  // Usamos el hook personalizado y asignamos el ref al contenedor de los filtros
+  const filterRef = useOutsideClick(() => setShowFilter(false));
 
   const handleClickToggleFilter = () => {
     setShowFilter(!showFilter);
@@ -36,13 +34,13 @@ const FilterCategory = () => {
 
   return (
     <div className='filter__category'>
-      <button className='button__filter' onClick={handleClickToggleFilter}>
+      <button className='button__filter' onClick={handleClickToggleFilter} ref={filterRef}>
         {showFilter ? 'Hide categories' : 'Filter Categories'}
       </button>
       {showFilter && (
-        <div className='filter__prod'>
-          <ul className='filter__of__category'>
-            <li className='categories__filter' onClick={handleClickAllProducts}>All Products</li>
+        <div className='filter__prod' >
+          <ul className='filter__of__category' >
+            <li className='categories__filter' onClick={handleClickAllProducts} >All Products</li>
             {categories?.map((category) => (
               <li className='categories__filter' onClick={() => handleClickCategories(category.id)} key={category.id}>
                 {category.name}
