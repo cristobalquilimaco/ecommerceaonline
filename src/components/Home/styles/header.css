@@ -13,6 +13,15 @@
     box-shadow: none;
 }
 
+.btn-outline-success{
+    background-color: salmon;
+    color: black;
+}
+
+.btn-outline-success{
+    background-color: salmon;
+    color: white;
+}
 
 .nav-item {
     font-size: 16px;
