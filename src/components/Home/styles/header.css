@@ -16,10 +16,12 @@
 .btn-outline-success{
     background-color: salmon;
     color: black;
+    border: none;
 }
 
-.btn-outline-success{
+.btn-outline-success:hover{
     background-color: salmon;
+    filter: brightness(1.09);
     color: white;
 }
 
